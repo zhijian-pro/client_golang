@@ -147,7 +147,7 @@ func testWriteSummary(t *testing.T, useTags bool) {
 		)
 
 		got := buf.String()
-
+		fmt.Println()
 		if err := checkLinesAreEqual(wantWithPrefix, got, useTags); err != nil {
 			t.Fatalf("test case index %d:\n%s", i, err.Error())
 		}
